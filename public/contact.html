@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Duru Storytime</title>
+
+  <style>
+    :root {
+      --deep-green: #0b3d2e;
+      --forest-green: #145c43;
+      --accent-orange: #f2a23a;
+      --fire-yellow: #ffd166;
+      --bg-dark: #071f18;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, var(--bg-dark), var(--deep-green));
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background: rgba(0,0,0,0.5);
+      padding: 40px;
+      border-radius: 15px;
+      text-align: center;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      color: var(--accent-orange);
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: var(--fire-yellow);
+      margin-bottom: 30px;
+    }
+
+    .contact-btn {
+      display: block;
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .whatsapp {
+      background: #25D366;
+      color: black;
+    }
+
+    .gmail {
+      background: #EA4335;
+      color: white;
+    }
+
+    .contact-btn:hover {
+      transform: scale(1.05);
+      opacity: 0.9;
+    }
+
+    footer {
+      margin-top: 20px;
+      font-size: 0.85em;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Contact Duru Storytime</h1>
+    <p>Reach out for collaborations, feedback, or business inquiries</p>
+
+    <!-- WHATSAPP LINK -->
+    <!-- Replace 234XXXXXXXXXX with your full WhatsApp number (with country code, no + or spaces) -->
+    <a href="https://wa.me/234XXXXXXXXXX" target="_blank" class="contact-btn whatsapp">
+      Chat on WhatsApp
+    </a>
+
+    <!-- GMAIL LINK -->
+    <!-- Replace yourgmail@gmail.com with your real email -->
+    <a href="mailto:yourgmail@gmail.com" class="contact-btn gmail">
+      Send Email (Gmail)
+    </a>
+
+    <footer>
+      © 2026 Duru Storytime
+    </footer>
+  </div>
+
+</body>
+</html>

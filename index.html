@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Duru Storytime</title>
+
+  <style>
+    :root {
+      --deep-green: #0b3d2e;
+      --forest-green: #145c43;
+      --accent-orange: #f2a23a;
+      --fire-yellow: #ffd166;
+      --bg-dark: #071f18;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg-dark);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 30px 20px;
+      background: radial-gradient(circle, var(--forest-green), var(--bg-dark));
+    }
+
+    .logo {
+      width: 140px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 2.8em;
+      margin: 5px 0;
+      color: var(--accent-orange);
+      letter-spacing: 2px;
+    }
+
+    p.tagline {
+      font-size: 1.1em;
+      opacity: 0.85;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: var(--fire-yellow);
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent-orange);
+    }
+
+    .youtube-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: var(--accent-orange);
+      color: black;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.05em;
+      transition: 0.3s;
+    }
+
+    .youtube-btn:hover {
+      background: #d98b28;
+      transform: scale(1.05);
+    }
+
+    .featured {
+      padding: 30px;
+    }
+
+    .featured h2 {
+      color: var(--fire-yellow);
+    }
+
+    .videos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 200px;
+      border-radius: 10px;
+      border: none;
+    }
+
+    footer {
+      padding: 20px;
+      background: #00000066;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+
+    <!-- LOGO (PLACE YOUR IMAGE FILE HERE) -->
+    <!-- Make sure your logo file is in the same folder and named e.g. logo.png -->
+    <img src="./asset/image/logo.png" alt="Duru Storytime Logo" class="logo">
+
+    <h1>DURU STORYTIME</h1>
+    <p class="tagline">Stories that reveal the darkness behind human choices.</p>
+
+    <!-- ===== EXACT PLACE YOU LINK YOUR OTHER PAGES ===== -->
+    <nav>
+      <a href="./public/about.html">About</a>
+      <a href="./public/contact.html">Contact</a>
+    </nav>
+    <!-- ================================================= -->
+
+    <a href="https://youtube.com/@durustorytime?si=B6WLYhA_Slx_di9B" target="_blank" class="youtube-btn">Visit My Channel</a>
+  </header>
+
+  <!-- FEATURED VIDEO -->
+  <section class="featured">
+    <h2>Featured Story</h2>
+    <iframe src="https://youtu.be/ZC11sruntkA?si=s1dEEJSEc170kodS"></iframe>
+  </section>
+
+  <!-- OTHER VIDEOS -->
+  <section class="videos">
+    <iframe src="https://youtu.be/FJGO04d46YI?si=TyfeTvaab5PC6bnS"></iframe>
+    <iframe src="https://youtu.be/t3U_iQ3-cMw?si=WNtAdul5SGcs1VfV"></iframe>
+    <iframe src="https://www.youtube.com/embed/VIDEO_ID"></iframe>
+  </section>
+
+  <footer>
+    <p>© 2026 Duru Storytime. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
